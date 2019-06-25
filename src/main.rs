@@ -1,8 +1,7 @@
 extern crate subprocess;
 use std::env;
 use std::fmt::Error;
-use std::io::{BufRead, BufReader};
-use subprocess::{Exec, ExitStatus, Popen, PopenError, Redirection, Result as PopenResult};
+use subprocess::Exec;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -17,7 +16,6 @@ fn main() {
         // string for now
         std::io::stdin()
             .read_line(&mut key_name)
-            .ok()
             .expect("Can't read line");
         // give means to quit
         // kill adb server when they are done
