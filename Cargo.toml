@@ -1,0 +1,8 @@
+[package]
+name = "firetv-controller"
+version = "0.1.0"
+authors = ["Joel Palmer <joelpalmer@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+subprocess = "0.1.18"
