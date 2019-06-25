@@ -1,4 +1,4 @@
-**Control any Fire TV or Fire TV Stick on your network.**
+**Control any Fire TV or Fire TV Stick on your network via your terminal.**
 
 Prerequisites: 
 
