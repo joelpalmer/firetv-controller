@@ -15,6 +15,6 @@ joel@Joels-iMac firetv-controller (master) $ cargo run <your-firetv-ip>
 * daemon started successfully
 connected to <your-firetv-ip>
 ```
-- [ ] Control
+- [x] Control (up, down, left, right)
 - [ ] Documentation
 
