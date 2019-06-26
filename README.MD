@@ -1,5 +1,8 @@
 ## Control any Fire TV or Fire TV Stick on your network via your terminal.
 
+**Note:** _This should more or less work w/ any Android-based device. I haven't tested any others but you should be able to hijack your kid's tablet or your spouse's phone. Control that screen time!_ 😉
+ 
+
 **Prerequisites:** 
 
 * [ADB](https://developer.android.com/studio/command-line/adb) installed & on your path
