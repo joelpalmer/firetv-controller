@@ -3,17 +3,17 @@
 **Prerequisites:** 
 
 * [ADB](https://developer.android.com/studio/command-line/adb) installed & on your path
-* Your Fire TV device has ADB enabled
+* Your Fire TV device has ADB enabled (this opens port 5555)
 * You know your Fire TV's IP Address
 
 **Todo:**
 
 - [x] Connect 
 ```console 
-joel@Joels-iMac firetv-controller (master) $ cargo run <your-firetv-ip>
+joel@Joels-iMac firetv-controller (master) $ cargo run <your-firetv-ip:5555>
 * daemon not running; starting now at tcp:5037
 * daemon started successfully
-connected to <your-firetv-ip>
+connected to <your-firetv-ip:5555>
 What key would you like to press? (q to quit)
 ```
 - [x] Control (up, down, left, right, enter, back, home, menu, play, pause)
