@@ -59,7 +59,41 @@ fn handle_command(key_name: &str) -> bool {
             .arg("22")
             .join()
             .is_ok(),
-        // todo: enter, back, home, menu, play/pause
+        "enter" => Exec::cmd("adb")
+            .arg("shell")
+            .arg("input")
+            .arg("keyevent")
+            .arg("66")
+            .join()
+            .is_ok(),
+        "back" => Exec::cmd("adb")
+            .arg("shell")
+            .arg("input")
+            .arg("keyevent")
+            .arg("4")
+            .join()
+            .is_ok(),
+        "home" => Exec::cmd("adb")
+            .arg("shell")
+            .arg("input")
+            .arg("keyevent")
+            .arg("3")
+            .join()
+            .is_ok(),
+        "play" => Exec::cmd("adb")
+            .arg("shell")
+            .arg("input")
+            .arg("keyevent")
+            .arg("85")
+            .join()
+            .is_ok(),
+        "pause" => Exec::cmd("adb")
+            .arg("shell")
+            .arg("input")
+            .arg("keyevent")
+            .arg("85")
+            .join()
+            .is_ok(),
         _ => false,
     }
 }
