@@ -1,4 +1,5 @@
-[![](https://tokei.rs/b1/github/joelpalmer/firetv-controller)](https://github.com/joelpalmer/firetv-controller)
+[![](https://tokei.rs/b1/github/joelpalmer/firetv-controller)](https://github.com/joelpalmer/firetv-controller) 
+[![Build Status](https://travis-ci.org/joelpalmer/firetv-controller.svg?branch=master)](https://travis-ci.org/joelpalmer/firetv-controller)
 ## Control any Fire TV or Fire TV Stick on your network via your terminal.
 
 **Note:** _This should more or less work w/ any Android-based device. I haven't tested any others but you should be able to hijack your kid's tablet or your spouse's phone. Control that screen time!_ 😉
