@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/joelpalmer/firetv-controller.svg?branch=master)](https://travis-ci.org/joelpalmer/firetv-controller)
 ## Control any Fire TV or Fire TV Stick on your network via your terminal.
 
-**Note:** _This should more or less work w/ any Android-based device. I haven't tested any others but you should be able to hijack your kid's tablet or your spouse's phone. Control that screen time!_ 😉
+**Note:** _This should more or less work with any Android-based device. I haven't tested any others but you should be able to hijack your kid's tablet or your spouse's phone. Control that screen time!_ 😉
  
 
 **Prerequisites:** 
