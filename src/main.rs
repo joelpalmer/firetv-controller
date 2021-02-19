@@ -1,12 +1,15 @@
 extern crate subprocess;
 use std::env;
-use std::fmt::Error;
 use subprocess::Exec;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
     let ip = &args[1];
-    Exec::cmd("adb").arg("connect").arg(ip).join();
+    Exec::cmd("adb")
+        .arg("connect")
+        .arg(ip)
+        .join()
+        .expect("Could not connect!");
     // ask the user what button they wish to virtually press
     loop {
         println!("What key would you like to press? (q to quit)");
@@ -20,7 +23,10 @@ fn main() {
         // give means to quit
         // kill adb server when they are done
         if let "q" = &*key_name.trim() {
-            Exec::cmd("adb").arg("kill-server").join();
+            Exec::cmd("adb")
+                .arg("kill-server")
+                .join()
+                .expect("Failed to kill adb");
             break;
         }
         // pass along their wishes to adb.
