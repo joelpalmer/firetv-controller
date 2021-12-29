@@ -100,6 +100,41 @@ fn handle_command(key_name: &str) -> bool {
             .arg("85")
             .join()
             .is_ok(),
+        "volup" => Exec::cmd("adb")
+            .arg("shell")
+            .arg("input")
+            .arg("keyevent")
+            .arg("24")
+            .join()
+            .is_ok(),
+        "voldown" => Exec::cmd("adb")
+            .arg("shell")
+            .arg("input")
+            .arg("keyevent")
+            .arg("25")
+            .join()
+            .is_ok(),
+        "mute" => Exec::cmd("adb")
+            .arg("shell")
+            .arg("input")
+            .arg("keyevent")
+            .arg("164")
+            .join()
+            .is_ok(),
+        "volmax" => Exec::cmd("adb")
+            .arg("shell")
+            .arg("media")
+            .arg("volume")
+            .arg("--set 15")
+            .join()
+            .is_ok(),
+        "volmin" => Exec::cmd("adb")
+            .arg("shell")
+            .arg("media")
+            .arg("volume")
+            .arg("--set 1")
+            .join()
+            .is_ok(),            
         _ => false,
     }
 }
